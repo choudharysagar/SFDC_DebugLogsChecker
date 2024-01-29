@@ -1,0 +1,18 @@
+<template>
+<lightning-card title="Debug Logs" icon-name="standard:apex">
+    <div class="slds-m-around_medium">
+        <lightning-button variant="brand" label="Refresh" title="Refresh" icon-name="action:refresh" onclick={refreshLogs}></lightning-button>
+        <lightning-button variant="destructive" label="Delete Logs" title="Delete Logs" onclick={handleDeleteLogs}></lightning-button>
+        <lightning-combobox name="recordCount" label="Select Debug Logs" value={selectedValue} options={options} onchange={handleChange}>
+        </lightning-combobox>
+    </div>
+    <div class="slds-scrollable_y" style="height:40rem" tabindex="0">
+    <lightning-datatable
+        key-field="Id"
+        data={logs}
+        columns={columns}
+        onrowaction={handleRowAction}>
+    </lightning-datatable>
+    </div>
+</lightning-card>
+</template>
