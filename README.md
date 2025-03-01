@@ -1,5 +1,5 @@
 A simple **Lightning Component** which help us to monitor debug logs directly from your Salesforce Application :)
-This Component use to monitor SFDC Debug Logs through this lightning component you can
+This Component used to monitor SFDC Debug Logs, through this lightning component you can
 
 -check debug logs
 -delete debug logs
